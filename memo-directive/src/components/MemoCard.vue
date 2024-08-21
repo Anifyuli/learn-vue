@@ -1,8 +1,8 @@
 <script setup>
-import MemoDialog from './MemoDialog.vue';
 import { ref } from 'vue';
 
-let memos = ref([]);
+let memos = ref([])
+
 </script>
 
 <template>

@@ -1,7 +1,6 @@
 <script setup>
-import { defineEmits, ref } from 'vue';
+import { ref } from 'vue';
 
-const emit = defineEmits(['update:memos']);
 let newMemo = ref("")
 let memos = ref([])
 
@@ -13,7 +12,6 @@ function saveMemos() {
     backgroundColor: generateColor()
   })
   newMemo.value = ""
-  emit('update:memos', memos.value)
 }
 
 function generateColor() {
@@ -34,7 +32,7 @@ function generateColor() {
       </div>
       <div class="modal-dialog">
         <form method="dialog">
-          <button @click="saveMemos" class="btn btn-block">Save</button>
+          <button @click="saveMemos" @submit.prevent="$emit( 'memos',memos)" class="btn btn-block">Save</button>
         </form>
       </div>
     </div>
