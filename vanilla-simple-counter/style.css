@@ -1,0 +1,41 @@
+body {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: darkslategrey;
+}
+
+main {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f5f5dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+#value {
+    color: slategrey;
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 10px;
+}
